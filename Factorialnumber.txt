@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Factexample
+{
+	public static void main(String args[])
+	{
+		int fact=1;
+		int n;
+		System.out.println(enter any number);
+		Scanner s=new Scanner(System.in);
+		n=s.nextInt();
+		System.out.println(enter any number);
+		for(int i=1;i=n;i++)
+		{
+			fact=facti;
+			System.out.println(  fact);
+		}
+		
+		
+	}
+
+}
