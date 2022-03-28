@@ -20,3 +20,36 @@ public class Factexample
 	}
 
 }
+
+
+*********************************Palindrom Number**********************************************
+package Basic_Programs;
+
+import java.util.Scanner;
+
+public class palindrom_no
+{
+
+	public static void main(String[] args)
+	{
+		int n,r,n1,sum=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter any number");
+		n=sc.nextInt();
+		n1=n;
+		while(n>0)
+		{
+			r=n%10;
+			sum=(sum*10)+r;
+			n=n/10;
+		}
+		if(n1==sum)
+			System.out.println("Given number is palindrom");
+		else
+			System.out.println("Given number is not palindrom");
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
