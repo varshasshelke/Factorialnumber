@@ -17,6 +17,36 @@ public class simpleprogram
 			System.out.println(sum(10));
 		}
 	}
+}
+**********************************Armstrong Number************************
+package Basic_Programs;
+
+import java.util.Scanner;
+
+public class Armstrong
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter any number : ");
+		int n=sc.nextInt();
+		int sum=0,r,n1;
+		n1=n;
+		
+		while(n>0)
+		{
+			r=n%10;
+			sum=sum+(r*r*r);
+			n=n/10;
+		}
+		
+		if(sum==n1)
+			System.out.println("Given number is armstrong");
+		else
+			System.out.println("Given number is not armstrong");
+	}
+}
+
 
 
 
