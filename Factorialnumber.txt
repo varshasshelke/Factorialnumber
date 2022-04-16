@@ -53,3 +53,33 @@ public class palindrom_no
 
 }
 
+*****************************************Fibonacci Series********************************************
+package Basic_Programs;
+
+import java.util.Scanner;
+
+public class fibonacci_series 
+{
+
+	public static void main(String[] args)
+	{
+		int first=0,second=1,third;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter given number upto print fibonacci series:");
+		int n=sc.nextInt();
+		System.out.println(first);
+		System.out.println(second);
+		for(int i=1;i<=n;i++)
+		{
+		third=first+second;
+		System.out.println(third);
+		first=second;
+		second=third;
+		}
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+
